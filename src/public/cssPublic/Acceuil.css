@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.imageChange {
+  width: 100%;
+
+  -webkit-animation: imageChange 10s infinite linear; /* Chrome, Safari, Opera */
+  animation: imageChange 10s infinite linear;
+
+  background: url("https://www.positive.news/wp-content/uploads/2019/03/Bluebells-1500x0-c-default.jpg");
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes imageChange {
+  0% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/Bluebells-1500x0-c-default.jpg");
+  } /*cyan*/
+  33% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/oak-tree-1934897-1500x0-c-default.jpg");
+  } /*green*/
+  66% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/Sherwood-pines-ben-1311243-unsplash-1500x0-c-default.jpg");
+  } /*yellow*/
+  100% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/Bluebells-1500x0-c-default.jpg");
+  } /*cyan*/
+}
+
+/* Standard syntax */
+@keyframes imageChange {
+  0% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/Bluebells-1500x0-c-default.jpg");
+  } /*cyan*/
+  33% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/oak-tree-1934897-1500x0-c-default.jpg");
+  } /*green*/
+  66% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/Sherwood-pines-ben-1311243-unsplash-1500x0-c-default.jpg");
+  } /*yellow*/
+  100% {
+    background: url("https://www.positive.news/wp-content/uploads/2019/03/Bluebells-1500x0-c-default.jpg");
+  } /*cyan*/
+}
+
+.Acceuil_Ac {
+  width: 100%;
+}
+
+.Acceuil_acc {
+  width: 100%;
+}
+.Acceuil_acc .titre_pasManquer {
+  max-width: 100%;
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  gap: 2rem;
+  scrollbar-width: none;
+  padding: 22px 22px;
+}
+
+.Acceuil_acc .titre_Info {
+  max-width: 100%;
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  gap: 2rem;
+  scrollbar-width: none;
+  padding: 22px 42px;
+}
+
+.haut {
+  width: 100%;
+}
+
+.Acceuil_acc {
+  width: 100%;
+}
+
+.titre_Info {
+  width: 100%;
+}
+
+/*////////////////*/
+/* .imageChange2 {
+  width: 300%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+} */

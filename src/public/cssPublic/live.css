@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+    .containerLi{
+        width: 100%;
+    }
+    
+    .containerLi .section_Grandlive{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 2rem; 
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1V{
+        color: white;
+        font-weight: bold;
+        
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1{
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+    }
+    .containerLi .section_Grandlive .section_petitLive1D{
+        margin-top: 6rem;
+        color: white;
+    }
+    .containerLi .section_Grandlive .section_petitLive1V{
+        margin-bottom: 3rem;
+      
+    
+    }
+    .containerLi .section_Grandlive .section_petitLive1R{
+        display: flex;
+        margin-top: 2rem;
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1 h2{
+       margin-bottom: -1.5rem;
+       margin-top: 3rem;
+    }
+
+
+@media screen and (min-width:668px){
+
+    .containerLi{
+        width: 100%;
+    }
+    
+    .containerLi .section_Grandlive{
+        padding-left: 2rem; 
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1V{
+        color: white;
+        font-weight: bold;
+        
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1{
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+           
+
+    }
+    .containerLi .section_Grandlive .section_petitLive1D{
+        margin-top: 6rem;
+        color: white;
+    }
+    .containerLi .section_Grandlive .section_petitLive1V{
+        margin-bottom: 3rem;
+      
+    
+    }
+    .containerLi .section_Grandlive .section_petitLive1R{
+        display: flex;
+        margin-top: 2rem;
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1 h2{
+       margin-bottom: -1.5rem;
+       margin-top: 3rem;
+    }
+    
+}
+@media screen and (min-width:768px){
+
+    .containerLi{
+        width: 100%;
+    }
+    
+    .containerLi .section_Grandlive{
+        margin-left: 2rem;
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1V{
+        color: white;
+        font-weight: bold;
+        
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1{
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+           
+
+    }
+    .containerLi .section_Grandlive .section_petitLive1D{
+        margin-top: 6rem;
+        color: white;
+    }
+    .containerLi .section_Grandlive .section_petitLive1V{
+        margin-bottom: 3rem;
+      
+    
+    }
+    .containerLi .section_Grandlive .section_petitLive1R{
+        display: flex;
+        margin-top: 2rem;
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1 h2{
+       margin-bottom: -1.5rem;
+       margin-top: 3rem;
+    }
+    
+}
+@media screen and (min-width:990px){
+
+    .containerLi{
+        width: 100%;
+    }
+    
+    .containerLi .section_Grandlive{
+        margin-left: 2rem;
+        padding-left: 3.5rem;
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1V{
+        color: white;
+        font-weight: bold;
+        
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1{
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+           
+
+    }
+    .containerLi .section_Grandlive .section_petitLive1D{
+        margin-top: 6rem;
+        color: white;
+    }
+    .containerLi .section_Grandlive .section_petitLive1V{
+        margin-bottom: 3rem;
+      
+    
+    }
+    .containerLi .section_Grandlive .section_petitLive1R{
+        display: flex;
+        margin-top: 2rem;
+    }
+    
+    .containerLi .section_Grandlive .section_petitLive1 h2{
+       margin-bottom: -1.5rem;
+       margin-top: 3rem;
+    }
+    
+}
+@media screen and (min-width:1100px){
+    
+    .containerLi .section_Grandlive{
+        margin-left: 2rem;
+        padding-left: 5.5rem;
+    }
+}

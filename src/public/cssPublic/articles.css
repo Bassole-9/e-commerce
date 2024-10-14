@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container_article {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.container_article .titre_article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin-top: 5rem;
+}
+
+.container .titre_article h1 {
+  margin-top: 5rem;
+}
+.section {
+  width: 100%;
+}
+
+.section .flo {
+  width: 100%;
+  padding: 12px 12px;
+}
+.arti {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  margin-top: 2rem;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.arti .white {
+  color: white;
+}
+
+.arti .img {
+  width: 100%;
+}
+.arti img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.arti .cmd {
+  background: black;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  padding: 7px 7px;
+}
+
+.arti p {
+  margin-top: 1rem;
+}
+
+.arti h2 {
+  margin-top: 1rem;
+}
+
+.arti:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  box-shadow: 3px 3px 12px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 520px) {
+  .flo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 620px) {
+  .flo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .container h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section .flo {
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    gap: 12px;
+    scrollbar-width: none;
+    padding: 22px 22px;
+  }
+  .arti {
+    display: grid;
+    justify-content: center;
+    flex-direction: initial;
+    background-color: rgb(49, 109, 118);
+    margin-top: 2rem;
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .section {
+    width: 100%;
+  }
+
+  .section .section_petit {
+    width: 100%;
+  }
+}
