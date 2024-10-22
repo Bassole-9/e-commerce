@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container_commandes {
+  width: 100%;
+  background: gray;
+}
+.section_commandes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.commandes1 {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 12px 22px;
+  background: rgb(49, 109, 118);
+}
+.btn_commandes {
+  margin-top: 0.5rem;
+}
+
+.commandes_prix {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.commande_images {
+  border: 1px solid black;
+  width: 60%;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+ 
+}
+.box_commande_map {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.commande_incrementer .btn_incre {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.box_commande {
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+}
+.prix {
+  font-size: 15px;
+}
+.descri_commandes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

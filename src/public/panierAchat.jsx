@@ -98,14 +98,13 @@ const PanierAchat = ({ panier, setPanier }) => {
         }
       );
       if (consome.status === 201) {
-        return setCommandeValide("votre commande a bien ete envoyé");
+        setCommandeValide("votre commande a bien ete envoyé");
+        setTimeout(() => {
+          setCommandeValide("");
+        }, 5000);
       } else {
         console.log("toliba");
       }
-
-      setTimeout(() => {
-        setCommandeValide("");
-      }, 5000);
     }
     
   };

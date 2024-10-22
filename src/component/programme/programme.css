@@ -55,7 +55,7 @@
 }
 
 /* changement de NavBar pour grande tablette*/
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .containerDecouvert {
     width: 100%;
     margin-top: 4rem;

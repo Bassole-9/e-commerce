@@ -185,12 +185,11 @@ const Header = ({ nombre }) => {
                 <span className="rond_blanc">{nombre}</span>
               </NavLink>
             </li>
-            {/* <li className="li_header_live">
-              <Link to="/live" className="li_header_nav">
-                <Dot />
-                Live
-              </Link>
-            </li> */}
+            <li className="li_header">
+              <NavLink to="/commande" className="li_header_nav">
+                Commandes
+              </NavLink>
+            </li>
           </div>
           <div className="loupe_rigth">
             <div className="loupe">
