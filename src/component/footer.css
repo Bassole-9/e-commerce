@@ -9,13 +9,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 25rem;
 }
 
 .nav_footer .div_log {
   display: flex;
   justify-content: center;
   height: 9rem;
-  margin-bottom: -6rem;
   margin-top: 4rem;
 }
 .nav_footer .div_log img {

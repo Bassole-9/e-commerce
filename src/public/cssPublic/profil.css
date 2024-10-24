@@ -79,7 +79,7 @@ hr {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   flex-direction: column;
   align-items: center;
   padding-bottom: 5rem;
@@ -212,6 +212,15 @@ hr {
     position: fixed;
     height: 100%;
     padding: 10px 10px;
+  }
+  .grand_profil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
   }
 
   .vide_profil h3 {

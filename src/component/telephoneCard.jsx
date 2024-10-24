@@ -5,12 +5,12 @@ const TelephoneCard = ({ produit, ajoutez }) => {
         <img height="100rem" src={produit.image} />
       </div>
       <p>
-        nom :<span className="white"> {produit.nom}</span>
+        Nom :<span className="white"> {produit.nom}</span>
       </p>
       <p>
-        couleur :<span className="white"> {produit.couleur}</span>
+        Couleur :<span className="white"> {produit.couleur}</span>
       </p>
-      <h2>prix:${produit.price}</h2>
+      <h2>prix: {produit.price}FCFA</h2>
       {/* donnee a envoyer dans la fonction ajoutez du panier qui est a la racine publicRoute */}
       <button className="cmd" onClick={() => ajoutez(produit)}>
         AJOUTEZ AU PANIER

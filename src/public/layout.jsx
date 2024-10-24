@@ -2,13 +2,13 @@ import { Outlet } from "react-router-dom";
 import Header from "../component/header";
 import Footer from "../component/footer";
 
-const Layout = ({ nombre }) => {
+const Layout = ({ nombre,message }) => {
   return (
     <>
       <div>
         <div>
           <div>
-            <Header nombre={nombre} />
+            <Header nombre={nombre} message={message} />
             <Outlet />
             <Footer />
           </div>

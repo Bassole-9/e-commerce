@@ -14,6 +14,7 @@ import {
   Article,
   ProfilRouter,
   Commandes,
+  Acceu
 } from ".";
 import { Inscription, Login } from "../Auth";
 import { useState, useEffect } from "react";
@@ -39,7 +40,10 @@ const PublicRouter = () => {
         return x.id === article.id;
       });
       if (exist) {
-        alert("le produit est deja dans le panier");
+        setMessage("le produit est deja dans le panier")
+        setTimeout(() => {
+          setMessage("");
+        }, 5000);
       } else {
         article.quantity = 1;
         local.push(article);
@@ -71,9 +75,10 @@ const PublicRouter = () => {
   return (
     <>
       <Routes>
-        <Route element={<Layout nombre={nombre} />}>
+        <Route element={<Layout nombre={nombre} message={message} />}>
           <Route index element={<Acceuil />} />
           <Route path="/Acceuil" element={<Acceuil />} />
+          <Route path="/Acc" element={<Acceu />} />
           <Route path="/Replay" element={<Replay />} />
           <Route path="/Live" element={<Live />} />
           <Route path="/Programme" element={<Programme />} />

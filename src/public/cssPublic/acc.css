@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container_acc{
+    width: 100%;
+}
+.section_acc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acc1{
+    margin-top: 14rem;
+    border: 1px solid black;
+    width:100px;
+   
+}

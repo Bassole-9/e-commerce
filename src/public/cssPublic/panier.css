@@ -29,6 +29,9 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  top: 55px;
+  right: 20px;
 }
 
 .retour_articles p {
@@ -127,8 +130,9 @@
   color: white;
 }
 
-.container_panier .section .section_petit_panier .btn_commande {
-  margin-left: 1rem;
+.div_commande {
+  display: flex;
+  justify-content: center;
 }
 
 .box {
@@ -265,6 +269,7 @@
   font-weight: bold;
   margin-top: 4rem;
   margin-bottom: 5rem;
+  margin-right: 13rem;
 }
 
 .flex_panier .incre {
@@ -294,5 +299,16 @@
     background-color: rgb(49, 109, 118);
     padding: 30px 30px;
     border-radius: 20px;
+  }
+  .retour_articles {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+  }
+  .btn_commande{
+    margin-right: 33rem;
   }
 }

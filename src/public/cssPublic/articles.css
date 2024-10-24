@@ -22,6 +22,7 @@
 }
 .section {
   width: 100%;
+  padding: 3.5rem;
 }
 
 .section .flo {
@@ -59,6 +60,7 @@
   cursor: pointer;
   color: white;
   padding: 7px 7px;
+  margin-top: 2rem;
 }
 
 .arti p {

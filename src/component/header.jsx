@@ -17,7 +17,7 @@ import { PiArticleMediumFill } from "react-icons/pi";
 
 /////////
 
-const Header = ({ nombre }) => {
+const Header = ({ nombre,message }) => {
   const connecter = localStorage.getItem("token");
   const info = JSON.parse(localStorage.getItem("user"));
   const premierLettre = info?.nom[0];
@@ -53,6 +53,7 @@ const Header = ({ nombre }) => {
     <>
       <nav className="Nav_header">
         <ul className="ul_header">
+        <div className="message_ajout">{message}</div>
           <div onClick={showNavbar}>
             <li>
               <Link className="li_header">
@@ -153,6 +154,7 @@ const Header = ({ nombre }) => {
       </div>
       <nav className="Nav_header_ordi">
         <ul className={noBg}>
+        <div className="message_ajout_ordi">{message}</div>
           <div>
             <NavLink to="/acceuil">
               <img height="39rem" width="100rem" src={image2} />

@@ -106,7 +106,6 @@ const PanierAchat = ({ panier, setPanier }) => {
         console.log("toliba");
       }
     }
-    
   };
 
   return (
@@ -139,7 +138,7 @@ const PanierAchat = ({ panier, setPanier }) => {
                   <div className="box" key={p.id}>
                     <div className="box_cadre">
                       <div className="box_img">
-                        <img src={p.image} />
+                        <img height="200px" width="50px" src={p.image} />
                       </div>
                       <div className="box_text">
                         <h3>
@@ -200,20 +199,19 @@ const PanierAchat = ({ panier, setPanier }) => {
               })}
               {panier.length > 0 && (
                 <>
-                          <div className="retour_articles">
-                              <Link to="/articles">
-                                <p>ajoutez +</p>
-                              </Link>
-                          </div>
+                  <div className="retour_articles">
+                    <Link to="/articles">
+                      <p>ajoutez +</p>
+                    </Link>
+                  </div>
                   <div className="prix_panier">
                     <h3>{totalPrice} FCFA</h3>
                   </div>
-                  <button
-                    className="btn_commande"
-                    onClick={() => envoie()}
-                  >
-                    Commander
-                  </button>
+                  <div className="div_commande">
+                    <button className="btn_commande" onClick={() => envoie()}>
+                      Commander
+                    </button>
+                  </div>
                 </>
               )}
             </div>

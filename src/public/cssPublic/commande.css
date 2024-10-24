@@ -7,6 +7,7 @@
 .container_commandes {
   width: 100%;
   background: gray;
+  padding-bottom: 2rem;
 }
 .section_commandes {
   width: 100%;
@@ -24,6 +25,7 @@
   margin-top: 2rem;
   padding: 12px 22px;
   background: rgb(49, 109, 118);
+  padding-bottom: 2rem;
 }
 .btn_commandes {
   margin-top: 0.5rem;
@@ -44,13 +46,13 @@
   flex-direction: column;
   align-items: center;
   margin-right: 1rem;
- 
 }
 .box_commande_map {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .commande_incrementer .btn_incre {
@@ -66,13 +68,32 @@
 .box_commande {
   height: 100px;
   width: 200px;
-  border: 1px solid black;
 }
 .prix {
   font-size: 15px;
 }
 .descri_commandes {
   width: 100%;
+  margin-left: 1.5rem;
+}
+
+.pasCo {
+  width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 4.2rem;
+  height: 40rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .commandes1 {
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 12px 22px;
+    background: rgb(49, 109, 118);
+    padding-bottom: 2rem;
+  }
 }

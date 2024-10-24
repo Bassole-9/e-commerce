@@ -1,5 +1,5 @@
 import "./cssPublic/profil.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link, } from "react-router-dom";
 import { userServices } from "../Api/service";
 import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
@@ -7,12 +7,10 @@ import { FaPowerOff } from "react-icons/fa6";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
 import { TiMessages } from "react-icons/ti";
-import { CiSettings } from "react-icons/ci";
 
 import { image1 } from "../assets";
 
 const Profil = () => {
-  const info = JSON.parse(localStorage.getItem("user"));
 
   const Navigate = useNavigate();
 
@@ -84,18 +82,7 @@ const Profil = () => {
                   <div className="ecrit_info"></div>
                 </div>
               </div>
-              <div className="cadre_video">
-                <div className="cadre_video_parent">
-                  <div className="box_video">
-                    <img height="100%" width="100%" src={image1} />
-                    <div className="ecrit">Developpement</div>
-                  </div>
-                  <div className="box_video">
-                    <img height="100%" width="100%" src={image1} />
-                    <div className="ecrit">Developpement</div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div></div>
