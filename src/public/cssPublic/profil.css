@@ -1,0 +1,480 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.cadre_video {
+  display: none;
+}
+
+.lien_profil {
+  text-decoration: none;
+}
+
+.info_width {
+  width: 100%;
+}
+hr {
+  width: 90%;
+  margin-top: 1rem;
+  color: black;
+}
+
+.info_profil .ecrit_info p {
+  color: black;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.info_profil {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_profil button {
+  margin-top: 2rem;
+}
+
+.info_profil .ecrit_info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3rem;
+  margin-top: 3rem;
+}
+
+.text_cadre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: red;
+  width: 90%;
+  height: 30rem;
+  padding: 12px 12px;
+  border-radius: 10px;
+  border: 3px solid gray;
+  margin-top: 2rem;
+}
+.text_cadre p {
+  margin-top: 1rem;
+}
+
+.text_cadre h2 {
+  margin-top: -2rem;
+}
+
+.box_image_profil {
+  margin-top: 15rem;
+}
+
+.container_profil {
+  width: 100%;
+  margin-bottom: 15rem;
+}
+.grand_profil {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.petit_profil {
+  width: 100%;
+  height: 20rem;
+}
+
+.petit_profil .noir .vide_profil h5 {
+  margin-top: 1rem;
+}
+
+.box_image_profil_cadre {
+  border: 1rem solid black;
+}
+
+.info_profil .box_image_profil {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.barre {
+  width: 100%;
+  height: 35px;
+  margin-top: 1rem;
+  padding-top: 0.3rem;
+  display: flex;
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.petit_profil p {
+  color: white;
+}
+.nom {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+/* .box_profil {
+  width: 20rem;
+} */
+.box_profil p {
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.logo_profil {
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+
+.blanc {
+  background: black;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.cadre_video {
+  width: 100%;
+}
+
+.cadre_video_parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.box_video {
+  height: 20rem;
+  width: 100%;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.box_video img {
+  border-radius: 10px;
+}
+
+.box_video .ecrit {
+  font-weight: 400;
+  color: rgb(11, 189, 130);
+  font-size: 16px;
+}
+
+.vide_profil {
+  background: gray;
+  padding: 22px 22px;
+}
+
+.vide_profil h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 2rem;
+}
+
+.barre {
+  background: black;
+}
+
+.barre_vide {
+  width: 100%;
+  background: black;
+  padding: 12px 12px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.box_video {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .vide_profil {
+    width: 15rem;
+    background: gray;
+    border-right: 2px solid black;
+    position: fixed;
+    height: 100%;
+    padding: 10px 10px;
+  }
+  .grand_profil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+
+  .vide_profil h3 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .barre {
+    background: black;
+  }
+
+  .barre_vide {
+    width: 100%;
+    background: black;
+    padding: 12px 12px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .info_width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(223, 216, 216);
+    margin-top: -0.9rem;
+    padding-left: 15rem;
+  }
+
+  .text_cadre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: red;
+    width: 90%;
+    height: 30rem;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    padding-left: 6rem;
+    margin-top: 2rem;
+  }
+  .text_cadre h2 {
+    margin-top: 1rem;
+  }
+
+  .box_video {
+    height: 20rem;
+    width: 100%;
+  }
+  .cadre_video_parent {
+    padding-left: 14rem;
+  }
+
+  .box_video .ecrit {
+    font-weight: 400;
+    color: rgb(11, 189, 130);
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .vide_profil {
+    width: 15rem;
+    background: gray;
+    border-right: 2px solid black;
+    position: fixed;
+    height: 100%;
+    padding: 10px 10px;
+  }
+
+  .vide_profil h3 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .barre_vide {
+    width: 100%;
+    background: black;
+    padding: 12px 12px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .info_width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(223, 216, 216);
+    margin-top: -0.9rem;
+    padding-left: 15rem;
+  }
+
+  .text_cadre {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: red;
+    width: 90%;
+    height: 30rem;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border: 3px solid gray;
+    padding-left: 6rem;
+    margin-top: 2rem;
+  }
+
+  .box_video {
+    height: 20rem;
+    width: 100%;
+  }
+  .cadre_video_parent {
+    padding-left: 14rem;
+  }
+
+  .box_video .ecrit {
+    font-weight: 400;
+    color: rgb(11, 189, 130);
+    font-size: 20px;
+  }
+}
+/* 
+@media screen and (min-width: 990px) {
+  .box_profil {
+    width: 20rem;
+  }
+  .box_profil p {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+  }
+
+  .noir {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .noir .nom_profil {
+    margin-right: 10.5rem;
+  }
+
+  .blanc {
+    border: 1px solid beige;
+    background: black;
+    padding-bottom: 2rem;
+    position: absolute;
+    z-index: 1000;
+    right: 1px;
+    position: fixed;
+    margin-top: -0.8rem;
+  }
+
+  .info_profil {
+    width: 100%;
+    height: 20rem;
+    background: white;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .info_width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(223, 216, 216);
+    margin-top: -0.9rem;
+    margin-left: 15rem;
+  }
+
+  .vide_profil {
+    width: 15rem;
+    background: whitesmoke;
+    border-right: 2px solid black;
+    position: fixed;
+    height: 100%;
+    margin-top: -0.9rem;
+  }
+
+  .barre_vide {
+    width: 100%;
+    background: black;
+    padding: 12px 12px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 1rem;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .box_image_profil {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .box_image_profil .profil_cadre {
+    border-bottom: 1px solid black;
+    height: 9rem;
+    width: 19rem;
+  }
+  .box_image_profil_cadre {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .box_image_profil_cadre {
+    border: 1px solid black;
+    margin-left: 1rem;
+    border-radius: 5px;
+  }
+  .box_image_profil_cadre .profil_cadre {
+    width: 100%;
+  }
+
+  .titre_div {
+    padding-left: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .titre_div h3 {
+    color: rgb(62, 165, 131);
+  }
+
+  .text_cadre {
+    position: absolute;
+    width: 37%;
+    background: red;
+    height: 43%;
+    left: 15rem;
+    padding: 12px 12px;
+    font-weight: bold;
+    border-top-right-radius: 50px;
+  }
+
+  .text_cadre p {
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+
+  .btn_profil {
+    margin-top: 3rem;
+  }
+  .btn_profil button {
+    background: black;
+  }
+} */

@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container_notif {
+  width: 100%;
+}
+
+.section_notif {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.notif1 {
+  background: gray;
+  height: 33rem;
+  max-width: 96%;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  padding: 12px 12px;
+  margin-bottom: -15rem;
+}
+
+.div_notif {
+  width: 100%;
+  height: 85%;
+  background: white;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 22px 22px;
+}
+
+.notif_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notif_flex h2 {
+  margin-right: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.notif_color {
+  color: black;
+}

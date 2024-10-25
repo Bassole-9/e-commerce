@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.containerDecouvertD{
+    width: 100%;
+    margin-top: 4rem;
+}
+.containerDecouvertD .grand_sectionD {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: grid;
+    grid-row: 1fr 2fr;
+}
+
+.containerDecouvertD .grand_sectionD .centerD {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+}
+
+.containerDecouvertD .grand_sectionD .centerD .petit_sectionD{
+    width: 13rem;
+    height: 24rem;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.containerDecouvertD .grand_sectionD .centerD .petit_sectionD img{
+   border-radius: 15px;
+}
+.containerDecouvertD .grand_sectionD .centerD .petit_sectionD img:hover{
+    border-radius: 15px;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.containerDecouvertD .grand_sectionD .centerD .ecritureDecou{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 5px;
+}

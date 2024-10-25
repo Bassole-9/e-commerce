@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .section_inscription {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .section_inscription form {
+  background-color: gray;
+  border-radius: 10px;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  padding: 2rem;
+}
+
+.container .section_inscription form .xxx {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  font-weight: bold;
+
+  font-size: 18px;
+}
+
+.container .section_inscription form .xxx .x1 {
+  color: white;
+}
+
+.container .section_inscription form .inscri_connexion {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.container .section_inscription form .inscri {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.container .section_inscription form .inscri2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container .section_inscription form .inscri2 .rond {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.container .section_inscription form .inscri3 {
+  margin-top: 2.5rem;
+}
+.container .section_inscription form .inscri4 {
+  margin-top: 2.8rem;
+}
+.container .section_inscription form .inscri4 input {
+  padding: 10px 12px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.container .section_inscription form .info_inscri {
+  border: 1px solid black;
+  padding: 15px 10px;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.container .section_inscription form .genre {
+  margin-top: 1.7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .section_inscription form .genre input {
+  margin-top: 1rem;
+}
+
+.container .section_inscription form .check {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.container .section_inscription form .check p {
+  margin-left: 1rem;
+}
+
+.container .section_inscription form .info2 {
+  border: 1px solid black;
+  padding: 15px 10px;
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.container .section_inscription form .btn_form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5rem;
+  background-color: black;
+  margin-left: 2rem;
+}
+
+.container .section_inscription form .dejas {
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.container .section_inscription form .dejas p .co {
+  text-decoration: none;
+  color: black;
+}
+
+.ilustre1 {
+  width: 500px;
+  height: 500px;
+}
+
+.ilustre1 img {
+  object-fit: cover;
+  padding: 0px 12px;
+}

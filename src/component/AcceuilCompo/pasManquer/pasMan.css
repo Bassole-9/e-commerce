@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.containerRec{
+    width: 100%;
+
+}
+.containerRec .grand_sectionRec .centerRec {
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.containerRec .grand_sectionRec .centerRec .centerRectangle{
+    height: 12rem;
+    width: 20rem;
+    margin-left: 1rem;
+    
+}
+.containerRec .grand_sectionRec .centerRec .centerRectangle img{
+   border-radius: 10px;
+}
+
+.containerRec .grand_sectionRec .centerRec  p{
+    color: white;
+    margin-left: 1.5rem;
+}
