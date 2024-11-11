@@ -1,67 +1,65 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.containerCar{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    
+.containerCar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.containerCar .grand_sectionCar{
-    margin-top: 3rem;
-    width: 100%;
-}
-
-.containerCar .grand_sectionCar .containerCar{
-    width: 100%;
-       gap: 1rem;
+.containerCar .grand_sectionCar {
+  margin-top: 3rem;
+  width: 100%;
 }
 
-
-.containerCar .grand_sectionCar .containerCar .petit_sectionCar{
-    overflow: hidden;
-    border-radius: 15px;
-    height: 23rem;
-    width: 17rem;
-    margin-right: 1.5rem;
-
-}
-.containerCar .petit_sectionCar .containerCar .petit_sectionCar img{
-    border-radius: 10px;
+.containerCar .grand_sectionCar .containerCar {
+  width: 100%;
+  gap: 1rem;
 }
 
-
-
-.containerCar .grand_sectionCar .containerCar .petit_sectionCar img:hover{
-    border-radius: 15px;
-    transform: scale(1.2);
-    transition: 0.5s;
-    border-radius: 15px;
+.containerCar .grand_sectionCar .containerCar .petit_sectionCar {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 250px;
+  height: 10rem;
+  margin-right: 1.5rem;
+  border: 2px solid red;
 }
 
-.containerCar .grand_sectionCar .centerCar{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
+.box_chaussure {
+  width: 100%;
+  height: 100%;
+}
+.containerCar .petit_sectionCar .containerCar .petit_sectionCar img {
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.containerCar .grand_sectionCar .centerCar p{
-    margin-top: 0.5rem;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
+.containerCar .grand_sectionCar .containerCar .petit_sectionCar img:hover {
+  border-radius: 15px;
+  transform: scale(1.05);
+  transition: 0.5s;
+  border-radius: 15px;
 }
 
-.containerCar .grand_sectionCar .containerCar .textCar{
-    display: flex;
-    color: white;
-    margin-left: 1.5rem;
-    
+.containerCar .grand_sectionCar .centerCar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
+.containerCar .grand_sectionCar .centerCar p {
+  margin-top: 0.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
 
+.containerCar .grand_sectionCar .containerCar .textCar {
+  display: flex;
+  color: white;
+  margin-left: 1.5rem;
+}

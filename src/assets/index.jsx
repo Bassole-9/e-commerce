@@ -18,19 +18,27 @@ export { default as image16 } from "./image/tee-short.png";
 export { default as image17 } from "./image/debardeur.png";
 export { default as image18 } from "./image/polo.jpg";
 export { default as image19 } from "./image/blouson-ski-femme.png";
+
+
+
 export { default as image20 } from "./image/adidas.pnd.jpeg";
 export { default as image21 } from "./image/jordan2.jpg";
 export { default as image22 } from "./image/jordane1.png";
 export { default as image23 } from "./image/nike1.png";
 export { default as image24 } from "./image/nike2.png";
-
 export { default as image25 } from "./image/yeezy.png";
+
+
 export { default as image26 } from "./image/huawei.png";
 export { default as image27 } from "./image/iPhone15.png";
 export { default as image28 } from "./image/iphone16.jpeg";
 export { default as image29 } from "./image/s23ultra.png";
 export { default as image30 } from "./image/samsung_s24.png";
 export { default as image31 } from "./image/sony.png";
+
+
+
+
 export { default as image32 } from "./image/tiktok_logo.png";
 export { default as image33 } from "./image/fb.png";
 export { default as image34 } from "./image/youtube.png";
@@ -41,3 +49,7 @@ export { default as image38 } from "./image/humain2.png";
 export { default as image39 } from "./image/humain3.png";
 export { default as image40 } from "./image/blob.svg";
 export { default as image41 } from "./image/shop.jpg";
+export { default as image42 } from "./image/vetement.png";
+export { default as image43 } from "./image/pair.png";
+export { default as image44 } from "./image/vetem.png";
+export { default as image45 } from "./image/log.png";

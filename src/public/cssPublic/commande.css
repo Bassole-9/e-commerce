@@ -31,9 +31,14 @@
   margin-top: 4rem;
 }
 
+.section_commandes .message {
+  height: 60vh;
+  margin-top: 25rem;
+}
+
 .commandes1 {
   width: 350px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 10px;
   margin-top: 2rem;
   padding: 12px 22px;
@@ -41,7 +46,7 @@
   padding-bottom: 2rem;
 }
 .btn_commandes {
-  margin-top: 0.5rem;
+  margin-top: 2rem;
 }
 
 .commandes_prix {
@@ -49,9 +54,11 @@
   justify-content: space-between;
   margin-top: 2rem;
 }
+.btn_annuler {
+  background: rgb(78, 194, 78);
+}
 
 .commande_images {
-  border: 1px solid black;
   width: 60%;
   margin-left: 1rem;
   display: flex;
@@ -82,8 +89,24 @@
   height: 100px;
   width: 200px;
 }
-.prix {
+.box_commande img {
+  border-radius: 5px;
+}
+.prix p {
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: black;
+  padding-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.prix p span {
+  color: red;
+  margin-top: 0.5rem;
 }
 .descri_commandes {
   width: 100%;

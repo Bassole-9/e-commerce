@@ -9,34 +9,37 @@ import { useNavigate } from "react-router-dom";
 import { image37, image38 } from "../assets";
 
 const Inscription = () => {
-  const [info, setInfo] = useState([
-    {
-      nom: "",
-      email: "",
-      motDePasse: "",
-      DateDeNaissance: "",
-      Numero: "",
-    },
-  ]);
+  function togglePasswordVisibility() {
+    const passwordInput = document.getElementById("motDePasse");
+    const passwordToggle = document.getElementById("togglePassword");
+    const eyeIcon = document.getElementById("eyeIcon");
+
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.classList.remove("fa-eye-slash");
+      eyeIcon.classList.add("fa-eye");
+    } else {
+      passwordInput.type = "password";
+      eyeIcon.classList.remove("fa-eye");
+      eyeIcon.classList.add("fa-eye-slash");
+    }
+  }
+
+  const [info, setInfo] = useState({
+    nom: "",
+    email: "",
+    motDePasse: "",
+    DateDeNaissance: "",
+    Numero: "",
+  });
 
   const [erreur, setErreur] = useState("");
 
   const Navigate = useNavigate();
 
-  //   const envoie = (e) => {
-  //     e.preventDefault();
-  //     const envoyez =()=>{
-  //         axios.post("http://localhost:4000",info,{
-  //             headers:{
-  //                 Authorization : localStorage.getItem("user")
-  //             }
-  //         }
-  //     )}
-  //   };
-
   const inscrire = (e) => {
     e.preventDefault();
-    console.log(info);
+    console.log("franck",info);
     userServices
       .AjoutUser(info)
       .then((res) => {
@@ -45,6 +48,9 @@ const Inscription = () => {
         }
       })
       .catch((err) => {
+        console.log(err);
+        
+        // setErreur(err.response.data.message);
         setErreur(err.response.data.message);
       });
   };
@@ -69,6 +75,7 @@ const Inscription = () => {
               <img src={image9} className="rond" />
               <img src={image10} className="rond" />
             </div>
+            <div style={{ color: "brown", display: "flex" }}>{erreur}</div>
             <hr />
             <div className="inscri3">
               <p>les champs marquer en astérisque sont obligatoire</p>
@@ -84,21 +91,34 @@ const Inscription = () => {
                 placeholder="E-mail*"
               />
               <hr />
-              <div style={{ color: "red", display: "flex" }}>{}</div>
             </div>
             <div className="inscri4">
-              <input
-                type="password"
-                name=""
-                placeholder="Mot de passe*"
-                value={info.motDePasse}
-                onChange={(e) =>
-                  setInfo({ ...info, motDePasse: e.target.value })
-                }
-              />
-              <hr />
-              <div style={{ color: "red", display: "flex" }}>{erreur}</div>
+              <div className="inscri4_flex">
+                <input
+                  id="motDePasse"
+                  type="password"
+                  name=""
+                  placeholder="Mot de passe*"
+                  value={info.motDePasse}
+                  onChange={(e) =>
+                    setInfo({ ...info, motDePasse: e.target.value })
+                  }
+                />
+                <button
+                  type="button"
+                  id="togglePassword"
+                  onClick={() => togglePasswordVisibility()}
+                >
+                  <i id="eyeIcon" className="fas fa-eye">
+                    <link
+                      rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+                    />
+                  </i>
+                </button>
+              </div>
             </div>
+            <hr />
             <div className="info_inscri">
               <p>
                 8 caractères minimum, dont 3 parmi:

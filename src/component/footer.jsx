@@ -1,6 +1,7 @@
 import "./footer.css";
 import {
   image2,
+  image45,
   image3,
   image4,
   image5,
@@ -15,7 +16,7 @@ const Footer = () => {
     <>
       <nav className="nav_footer">
         <div className="div_log">
-          <img width="19%" height="19%" src={image2}></img>
+          <img width="100%" height="100%" src={image45}></img>
         </div>
         <div className="div_footer">
           <p>

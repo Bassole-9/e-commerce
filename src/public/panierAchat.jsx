@@ -7,7 +7,7 @@ import { GrValidate } from "react-icons/gr";
 import { userServices } from "../Api/service";
 import axios from "axios";
 
-const PanierAchat = ({ panier, setPanier }) => {
+const PanierAchat = ({ panier, setPanier, setListe }) => {
   const [commandeValide, setCommandeValide] = useState("");
 
   const Navigate = useNavigate();
@@ -63,27 +63,9 @@ const PanierAchat = ({ panier, setPanier }) => {
     objet: panier,
   };
 
-  //////fonction qui envoie la commande dans la Bd et verifie si l'utilisateur est connecte ou pas avant de passer la commande
-  // const envoie = () => {
-  //   if (!userServices.isLogged()) {
-  //     Navigate("/connexion");
-  //   } else {
-  //     userServices
-  //       .ajoutCommande(data)
-  //       .then((res) => {
-  //         if (res.status === 201) {
-  //           return setCommandeValide("votre commande a bien ete envoyé");
-  //         } else {
-  //           console.log("toliba");
-  //         }
-  //       })
-  //       .catch((err) => console.log(err.message));
-  //     setTimeout(() => {
-  //       setCommandeValide("");
-  //     }, 5000);
-  //   }
-  // };
 
+
+  ////////misa a jour en direct/////////////
   const envoie = async () => {
     if (!userServices.isLogged()) {
       Navigate("/connexion");
@@ -97,8 +79,12 @@ const PanierAchat = ({ panier, setPanier }) => {
           },
         }
       );
+      console.log("tolibaaa",consome);
+      
       if (consome.status === 201) {
         setCommandeValide("votre commande a bien ete envoyé");
+        console.log("toli",consome.data.message);
+        setListe((hold)=>[...hold,consome.data.message])
         setTimeout(() => {
           setCommandeValide("");
         }, 5000);
@@ -123,11 +109,18 @@ const PanierAchat = ({ panier, setPanier }) => {
           </div>
         )}
         {commandeValide ? (
-          <div className="validation">
-            <p className="titre_mess">{commandeValide}</p>
-            <p className="logo_grand">
-              <GrValidate />
-            </p>
+          <div className="container_validation">
+            <div className="validation">
+              
+            </div>
+            <div className="message_validation">
+              <div className="cadre_validation">
+                <p className="titre_mess">{commandeValide}</p>
+                <p className="logo_grand">
+                  <GrValidate />
+                </p>
+              </div>
+            </div>
           </div>
         ) : null}
         <div className="container_panier">

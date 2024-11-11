@@ -6,7 +6,6 @@
 
 .container_redaction {
   width: 100%;
-  margin-bottom: -17rem;
 }
 
 .section_redaction {
@@ -16,8 +15,9 @@
   flex-direction: column;
   margin-top: 4rem;
   background: whitesmoke;
-  height: 13rem;
+  height: 30rem;
   align-items: center;
+  
 }
 
 .redaction1 {
@@ -51,7 +51,7 @@
     flex-direction: column;
     margin-top: 4rem;
     background: whitesmoke;
-    height: 30rem;
+    height: 50rem;
     align-items: center;
   }
 

@@ -1,9 +1,6 @@
 import "./cssPublic/programme.css";
-import { image1 } from "../assets";
-import Categorie from "../component/Categorie/categorie";
 import Programmer from "../component/programme/programme";
 import { useState } from "react";
-import JourCategorie from "../component/jourCate/jourCate";
 import Jour from "../component/jour/jour";
 
 const Programme = () => {
@@ -153,7 +150,9 @@ const Programme = () => {
           <div className="elastique">
             <div className="programme_flex">
               {pro.map((p, id) => {
-                return <Programmer titreP={p.titre} imageP={p.image} />;
+                return <div key={id}>
+                  <Programmer titreP={p.titre} imageP={p.image} />;
+                  </div>
               })}
             </div>
           </div>

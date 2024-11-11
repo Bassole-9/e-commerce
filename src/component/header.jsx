@@ -2,10 +2,10 @@ import { CiBurger } from "react-icons/ci";
 import "./header.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaPlayCircle } from "react-icons/fa";
-import { Radio } from "lucide-react";
+import { CommandIcon, Radio } from "lucide-react";
 import { TvMinimal } from "lucide-react";
 import { CircleUserRound } from "lucide-react";
-import { image2 } from "../assets";
+import { image2, image45 } from "../assets";
 import { X } from "lucide-react";
 import { Search } from "lucide-react";
 import { useState } from "react";
@@ -17,7 +17,7 @@ import { PiArticleMediumFill } from "react-icons/pi";
 
 /////////
 
-const Header = ({ nombre,message }) => {
+const Header = ({ nombre, message }) => {
   const connecter = localStorage.getItem("token");
   const info = JSON.parse(localStorage.getItem("user"));
   const premierLettre = info?.nom[0];
@@ -53,7 +53,7 @@ const Header = ({ nombre,message }) => {
     <>
       <nav className="Nav_header">
         <ul className="ul_header">
-        <div className="message_ajout">{message}</div>
+          <div className="message_ajout">{message}</div>
           <div onClick={showNavbar}>
             <li>
               <Link className="li_header">
@@ -84,6 +84,12 @@ const Header = ({ nombre,message }) => {
             <NavLink to="/programme" className="li_header">
               <TvMinimal className="hambur" />
               Programme
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/commande" className="li_header">
+              <CommandIcon className="hambur" />
+              Commandes
             </NavLink>
           </li>
 
@@ -118,7 +124,7 @@ const Header = ({ nombre,message }) => {
       <div className={active}>
         <ul className="ul_header_ecrant">
           <div className="logo_nav">
-            <img height="33rem" width="78rem" src={image2} />
+            <img height="43rem" width="78rem" src={image45} />
             <div className="loupe">
               <div className="loupe_rigth">
                 <Search />
@@ -145,19 +151,19 @@ const Header = ({ nombre,message }) => {
               Calendrier des Programmes
             </li>
           </NavLink>
-          <NavLink className="lin" to="/replay">
+          <NavLink className="lin" to="/commande">
             <li onClick={removeNavbar} className="li_header">
-              Nos Emissions
+              mes commandes
             </li>
           </NavLink>
         </ul>
       </div>
       <nav className="Nav_header_ordi">
         <ul className={noBg}>
-        <div className="message_ajout_ordi">{message}</div>
+          <div className="message_ajout_ordi">{message}</div>
           <div>
             <NavLink to="/acceuil">
-              <img height="39rem" width="100rem" src={image2} />
+              <img height="59rem" width="100rem" src={image45} />
             </NavLink>
           </div>
           <div className="ul_nave_3_li">
@@ -173,7 +179,7 @@ const Header = ({ nombre,message }) => {
             </li>
             <li className="li_header">
               <NavLink to="/" className="li_header_nav">
-                Notre Chaine
+                Acceuil
               </NavLink>
             </li>
             <li className="li_header">
@@ -214,46 +220,6 @@ const Header = ({ nombre,message }) => {
                   >
                     <div className="lettre">{premierLettre}</div>
                   </li>
-
-                  {/* <div className="blanc">
-                    <div className="nom_profil">
-                      <p className="nom">{info.nom}</p>
-                    </div>
-                    <div className="box_profil">
-                      <hr />
-                      <p>Mes espaces</p>
-                      <div className="barre">
-                        <FaUser className="logo_profil" />
-                        Etudiant
-                      </div>
-                      <div className="barre">
-                        <CiSettings className="logo_profil" />
-                        Compte et parametre
-                      </div>
-                      <Link className="lien_profil" to="/Redaction">
-                        <div className="barre">
-                          <TiMessages className="logo_profil" />
-                          Espace redactions
-                        </div>
-                      </Link>
-                      <Link className="lien_profil" to="/Messages">
-                        <div className="barre">
-                          <MdOutlineMail className="logo_profil" />
-                          Messages
-                        </div>
-                      </Link>
-
-                      <Link className="lien_profil" to="/Notifications">
-                        <div className="barre">
-                          <IoIosNotificationsOutline className="logo_profil" />
-                          Notifications
-                        </div>
-                      </Link>
-                      <div onClick={() => deconnecter()} className="barre">
-                        <FaPowerOff className="logo_profil" /> Deconnexions
-                      </div>
-                    </div>
-                  </div> */}
                 </NavLink>
               ) : (
                 <div>

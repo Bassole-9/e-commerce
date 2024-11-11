@@ -1,29 +1,26 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.containerRec{
-    width: 100%;
 
-}
 .containerRec .grand_sectionRec .centerRec {
-    display: grid;
-    gap: 1rem;
-    
+  width: 100%;
 }
 
-.containerRec .grand_sectionRec .centerRec .centerRectangle{
-    height: 12rem;
-    width: 20rem;
-    margin-left: 1rem;
-    
+.containerRec .grand_sectionRec .centerRec .centerRectangle {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  border-radius: 10px;
 }
-.containerRec .grand_sectionRec .centerRec .centerRectangle img{
-   border-radius: 10px;
+.containerRec .grand_sectionRec .centerRec .centerRectangle img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.containerRec .grand_sectionRec .centerRec  p{
-    color: white;
-    margin-left: 1.5rem;
+.containerRec .grand_sectionRec .centerRec p {
+  color: white;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
 }

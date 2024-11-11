@@ -6,7 +6,7 @@ import { articles } from "./data";
 import { chaussures } from "./data";
 import { telephone } from "./data";
 
-const Article = ({ajoutez}) => {
+const Article = ({ ajoutez }) => {
   return (
     <>
       <div className="container_article">

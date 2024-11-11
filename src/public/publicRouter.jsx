@@ -3,7 +3,6 @@ import {
   Acceuil,
   Layout,
   Replay,
-  Live,
   Programme,
   Profil,
   Notifications,
@@ -30,7 +29,7 @@ const PublicRouter = () => {
   const nombre = panier.length;
 
   const [liste, setListe] = useState([]);
-  console.log("perdu",liste);
+  console.log("perdu", liste);
 
   const ajoutez = (article) => {
     const local = JSON.parse(localStorage.getItem("panier"));
@@ -39,7 +38,7 @@ const PublicRouter = () => {
         return x.id === article.id;
       });
       if (exist) {
-        setMessage("le produit est deja dans le panier")
+        setMessage("le produit est deja dans le panier");
         setTimeout(() => {
           setMessage("");
         }, 5000);
@@ -62,11 +61,12 @@ const PublicRouter = () => {
     }
   };
 
+  ///recuperationdes commandes de la BD
   useEffect(() => {
     apiService
       .getComandes()
       .then((res) => {
-       setListe(res);
+        setListe(res);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -78,7 +78,6 @@ const PublicRouter = () => {
           <Route index element={<Acceuil />} />
           <Route path="/Acceuil" element={<Acceuil />} />
           <Route path="/Replay" element={<Replay />} />
-          <Route path="/Live" element={<Live />} />
           <Route path="/Programme" element={<Programme />} />
           <Route path="/inscription" element={<Inscription />} />
           <Route path="/connexion" element={<Login />} />
@@ -86,9 +85,18 @@ const PublicRouter = () => {
           <Route path="/Articles" element={<Article ajoutez={ajoutez} />} />
           <Route
             path="/Panier"
-            element={<PanierAchat panier={panier} setPanier={setPanier} />}
+            element={
+              <PanierAchat
+                panier={panier}
+                setPanier={setPanier}
+                setListe={setListe}
+              />
+            }
           />
-          <Route path="/commande" element={<Commandes liste={liste}/>} />
+          <Route
+            path="/commande"
+            element={<Commandes liste={liste} setListe={setListe} />}
+          />
           <Route path="/*" element={<Erreur />} />
         </Route>
       </Routes>

@@ -62,18 +62,46 @@
 
 .validation {
   width: 100%;
-  height: 20rem;
+  height: 100%;
   border: 1px solid black;
-  margin-top: 8rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   background-color: rgb(49, 109, 118);
   position: absolute;
   position: fixed;
-  border-radius: 30px;
   z-index: 2000;
+  opacity: 35%;
+}
+
+.container_validation {
+  display: flex;
+  justify-content: center;
+}
+
+.container_validation .message_validation {
+  width: 40%;
+  background: rgb(49, 109, 118);
+  position: absolute;
+  z-index: 3000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+  padding: 3rem;
+  border-radius: 10px;
+}
+.container_validation .message_validation .titre_mess {
+  font-size: 22px;
+}
+.message_validation .cadre_validation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .validation .titre_mess {
@@ -307,7 +335,7 @@
     top: 55px;
     right: 30px;
   }
-  .btn_commande{
+  .btn_commande {
     margin-right: 33rem;
   }
 }

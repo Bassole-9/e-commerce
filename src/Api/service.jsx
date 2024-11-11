@@ -1,11 +1,12 @@
 import Axios from "./callerService";
 
 const AjoutUser = (user) => {
+  console.log(user);
   return Axios.post("/api/users/", user);
 };
 
-const login =(user)=>{
-    return Axios.post("/api/users/login",user)
+const login =async (user)=>{
+  return await Axios.post("/api/users/login",user)
 }
 
 let saveToken = (token) => {
