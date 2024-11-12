@@ -6,7 +6,6 @@ import { SlLike } from "react-icons/sl";
 import { MdOutlineSecurity } from "react-icons/md";
 import {
   image17,
-  image41,
   image44,
   image43,
   image20,
@@ -18,7 +17,6 @@ import {
   image26,
   image27,
   image28,
-  image29,
   image30,
   image31,
   image14,
@@ -32,6 +30,7 @@ import MyCarousel from "../component/carousel";
 import MyCarouselPetit from "../component/carouselPetit";
 import { GiConverseShoe } from "react-icons/gi";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
 
 const Acceuil = () => {
   const [acceuil, setAcceuil] = useState([
@@ -330,24 +329,28 @@ const Acceuil = () => {
               <div className="box_img1">
                 <div className="container_box">
                   <div className="container_box_label">
-                    <label id="">Pick up Location</label>
-                    <input type="text" placeholder="from wher" />
+                    <label id="">Lieu de prise en charge</label>
+                    <input type="text" placeholder="d'ou" />
                   </div>
                   <div className="container_box_label">
-                    <label id="">Pick up Location</label>
-                    <input type="text" placeholder="from wher" />
+                    <label id="">lieu de dépôt</label>
+                    <input type="text" placeholder="ou aller" />
                   </div>
                   <div className="container_box_label">
-                    <label id="">Pick up Location</label>
-                    <input type="text" placeholder="from wher" />
+                    <label id="">date de retrait</label>
+                    <input type="text" placeholder="mm/dd/yyy" />
                   </div>
                   <div className="container_box_label">
-                    <label id="">Pick up Location</label>
-                    <input type="text" placeholder="from wher" />
+                    <label id="">heur de prise en charge</label>
+                    <input type="text" placeholder="16:00 PM" />
                   </div>
                 </div>
                 <div className="acceuil_btn">
-                  <button className="btn_acceuil">find shop</button>
+                  <Link to="./articles">
+                    <button className="btn_acceuil">
+                      trouver des articles
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -355,6 +358,19 @@ const Acceuil = () => {
         </div>
 
         <div className="Acceuil_acc">
+          <div></div>
+          <div className="acceuil_box_haut">
+            <h1>
+              "✨ Nouveau sur notre boutique ! Découvrez la collection
+              printemps/été 2024.
+              <span></span>
+            </h1>
+            <h3>
+              Des looks frais et tendance pour renouveler votre garde-robe. 🛍️🛍️{" "}
+              <br />
+              <Link to="./articles">voir les articles</Link>
+            </h3>
+          </div>
           <div className="haut">
             <div className="titre_pasManquer">
               {melange.map((p, id) => {

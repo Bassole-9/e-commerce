@@ -1,7 +1,6 @@
 import Axios from "./callerService";
 
 const AjoutUser = (user) => {
-  console.log(user);
   return Axios.post("/api/users/", user);
 };
 

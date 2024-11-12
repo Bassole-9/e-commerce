@@ -8,6 +8,7 @@ import { userServices } from "../Api/service";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  //oeil de mot de passe
   function togglePasswordVisibility() {
     const passwordInput = document.getElementById("motDePasse");
     const passwordToggle = document.getElementById("togglePassword");
@@ -26,21 +27,17 @@ const Login = () => {
 
   const [MessageErreur, setMessageErreur] = useState("");
   const Navigate = useNavigate();
-  const [info, setInfo] = useState([
-    {
-      email: "",
-      motDePasse: "",
-    },
-  ]);
+  const [info, setInfo] = useState({
+    email: "",
+    motDePasse: "",
+  });
 
   const connexion = (e) => {
     e.preventDefault();
-    console.log(info);
     userServices
       .login(info)
       .then((res) => {
         if (res.status === 200) {
-          console.log(res.data);
           userServices.saveToken(res.data.token);
           userServices.saveInfo(res.data.message);
           Navigate("/acceuil");
@@ -70,7 +67,7 @@ const Login = () => {
               <img src={image9} className="rond" />
               <img src={image10} className="rond" />
             </div>
-            <p style={{  color: "brown" }}>{MessageErreur}</p>
+            <p style={{ color: "brown" }}>{MessageErreur}</p>
             <hr />
 
             <div className="inscri4">

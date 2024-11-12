@@ -1,5 +1,5 @@
 import "./cssPublic/profil.css";
-import { Link, } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { userServices } from "../Api/service";
 import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
@@ -8,9 +8,10 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
 import { TiMessages } from "react-icons/ti";
 
-import { image1 } from "../assets";
 
 const Profil = () => {
+  const infoUser = JSON.parse(localStorage.getItem("user"));
+  console.log(infoUser);
 
   const Navigate = useNavigate();
 
@@ -32,7 +33,7 @@ const Profil = () => {
                 <h5>Mes espaces</h5>
                 <div className="barre">
                   <FaUser className="logo_profil" />
-                  Etudiant
+                  <p style={{ color: "red" }}>{infoUser.nom}</p>
                 </div>
                 <Link className="lien_profil" to="/profil/Redactions">
                   <div className="barre">
@@ -82,7 +83,6 @@ const Profil = () => {
                   <div className="ecrit_info"></div>
                 </div>
               </div>
-              
             </div>
           </div>
           <div></div>

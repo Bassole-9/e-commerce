@@ -2,22 +2,22 @@ import { CiBurger } from "react-icons/ci";
 import "./header.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaPlayCircle } from "react-icons/fa";
-import { CommandIcon, Radio } from "lucide-react";
+import { CommandIcon } from "lucide-react";
 import { TvMinimal } from "lucide-react";
 import { CircleUserRound } from "lucide-react";
-import { image2, image45 } from "../assets";
+import {image45 } from "../assets";
 import { X } from "lucide-react";
 import { Search } from "lucide-react";
 import { useState } from "react";
 import { image11 } from "../assets";
 import { Link, NavLink } from "react-router-dom";
-import { Dot } from "lucide-react";
 import { SlBasket } from "react-icons/sl";
 import { PiArticleMediumFill } from "react-icons/pi";
+import SearchBar from "./search";
 
 /////////
 
-const Header = ({ nombre, message }) => {
+const Header = ({ nombre, message, handleSearch }) => {
   const connecter = localStorage.getItem("token");
   const info = JSON.parse(localStorage.getItem("user"));
   const premierLettre = info?.nom[0];
@@ -198,11 +198,15 @@ const Header = ({ nombre, message }) => {
                 Commandes
               </NavLink>
             </li>
-          </div>
-          <div className="loupe_rigth">
-            <div className="loupe">
+            <div className="search_flex">
+              <SearchBar onSearch={handleSearch} />
+              <div className="loupe">
               <Search />
             </div>
+            </div>
+          </div>
+          <div className="loupe_rigth">
+            
             <div className="userBtn">
               {connecter ? (
                 <NavLink className="a" to="/profil">

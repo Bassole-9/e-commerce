@@ -79,17 +79,15 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
           },
         }
       );
-      console.log("tolibaaa",consome);
       
       if (consome.status === 201) {
         setCommandeValide("votre commande a bien ete envoyé");
-        console.log("toli",consome.data.message);
         setListe((hold)=>[...hold,consome.data.message])
         setTimeout(() => {
           setCommandeValide("");
         }, 5000);
       } else {
-        console.log("toliba");
+        console.log("erreur lors de la commande");
       }
     }
   };

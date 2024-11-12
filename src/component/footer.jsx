@@ -1,6 +1,5 @@
 import "./footer.css";
 import {
-  image2,
   image45,
   image3,
   image4,
@@ -20,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="div_footer">
           <p>
-            <Link className="lien">Acceuil / </Link> Replay
+            <Link to="./acceuil" className="lien">Acceuil / </Link> Replay
           </p>
         </div>
         <div className="copi">

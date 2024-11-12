@@ -19,7 +19,6 @@ const Commandes = ({ liste, setListe }) => {
       });
   };
 
-  console.log(liste);
 
   return (
     <>

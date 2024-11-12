@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PublicRouter from "./public/publicRouter";
 import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import ScrollToTop from "./component/scrollTop";
 
 //wrapper le non retour a la page inscription et connection lorqu'on est connecter
 const Wraper = ({ children }) => {
@@ -28,6 +29,7 @@ function App() {
     <>
       <BrowserRouter>
         <Wraper>
+          <ScrollToTop/>
           <Routes>
             <Route path="/*" element={<PublicRouter />} />
             {/* <Route path="/auth/*" element={<AuthRouter />} /> */}

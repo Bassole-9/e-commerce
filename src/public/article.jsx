@@ -2,11 +2,10 @@ import "./cssPublic/articles.css";
 import ChaussureCard from "../component/ChaussureCard";
 import ProduitCard from "../component/produitCard";
 import TelephoneCard from "../component/telephoneCard";
-import { articles } from "./data";
-import { chaussures } from "./data";
-import { telephone } from "./data";
 
-const Article = ({ ajoutez }) => {
+
+
+const Article = ({ ajoutez, filteredSearch,filteredChaussure, filteredTelephone }) => {
   return (
     <>
       <div className="container_article">
@@ -17,7 +16,7 @@ const Article = ({ ajoutez }) => {
           <div className="section_petit">
             {/* la div sur laquel on fait le overflow */}
             <div className="flo">
-              {articles.map((prod, id) => {
+              {filteredSearch.map((prod, id) => {
                 return (
                   <ProduitCard produit={prod} ajoutez={ajoutez} key={id} />
                 );
@@ -32,7 +31,7 @@ const Article = ({ ajoutez }) => {
           <div className="section_petit">
             {/* la div sur laquel on fait le overflow */}
             <div className="flo">
-              {chaussures.map((prod, id) => {
+              {filteredChaussure.map((prod, id) => {
                 return (
                   <ChaussureCard produit={prod} ajoutez={ajoutez} key={id} />
                 );
@@ -47,7 +46,7 @@ const Article = ({ ajoutez }) => {
           <div className="section_petit">
             {/* la div sur laquel on fait le overflow */}
             <div className="flo">
-              {telephone.map((prod, id) => {
+              {filteredTelephone.map((prod, id) => {
                 return (
                   <TelephoneCard produit={prod} ajoutez={ajoutez} key={id} />
                 );

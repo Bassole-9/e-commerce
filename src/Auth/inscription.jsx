@@ -39,7 +39,6 @@ const Inscription = () => {
 
   const inscrire = (e) => {
     e.preventDefault();
-    console.log("franck",info);
     userServices
       .AjoutUser(info)
       .then((res) => {
@@ -48,8 +47,6 @@ const Inscription = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
-        
         // setErreur(err.response.data.message);
         setErreur(err.response.data.message);
       });

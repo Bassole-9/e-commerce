@@ -141,7 +141,6 @@ const Programme = () => {
     <>
       <div className="containerD">
         <div className="setion_programme">
-          <div className="setion_Petitprogramme"></div>
           <button className="Btn_telecharge">Telecharger le programme</button>
           <div className="CategorieGrand">
             <Jour />
@@ -150,9 +149,11 @@ const Programme = () => {
           <div className="elastique">
             <div className="programme_flex">
               {pro.map((p, id) => {
-                return <div key={id}>
-                  <Programmer titreP={p.titre} imageP={p.image} />;
+                return (
+                  <div key={id}>
+                    <Programmer titreP={p.titre} imageP={p.image} />
                   </div>
+                );
               })}
             </div>
           </div>

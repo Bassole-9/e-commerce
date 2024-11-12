@@ -15,7 +15,6 @@ const MyCarouselPetit = () => {
   const items = [
     <div
       key="1"
-      ariaLabel="Item 1"
       style={{
         background: "black",
         height: "300px",
@@ -32,7 +31,6 @@ const MyCarouselPetit = () => {
     </div>,
     <div
       key="2"
-      ariaLabel="Item 1"
       style={{
         background: "black",
         height: "300px",
@@ -50,7 +48,6 @@ const MyCarouselPetit = () => {
     </div>,
     <div
       key="3"
-      ariaLabel="Item 1"
       style={{
         background: "black",
         height: "300px",
@@ -68,7 +65,6 @@ const MyCarouselPetit = () => {
     </div>,
     <div
       key="4"
-      ariaLabel="Item 1"
       style={{
         background: "black",
         height: "300px",
@@ -86,7 +82,6 @@ const MyCarouselPetit = () => {
     </div>,
     <div
       key="5"
-      ariaLabel="Item 1"
       style={{
         background: "black",
         height: "300px",
@@ -104,7 +99,6 @@ const MyCarouselPetit = () => {
     </div>,
     <div
       key="6"
-      ariaLabel="Item 1"
       style={{
         background: "black",
         height: "300px",
