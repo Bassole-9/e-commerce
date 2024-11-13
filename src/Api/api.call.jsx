@@ -8,11 +8,11 @@ const getComandes = async () => {
     },
   });
   if (data.status === 200) {
-    return data.data.commandes
+    return data.data.commandes;
   }
 };
 
-///modifier dans la base de donnéé
+///modifier commandes dans la base de donnéé
 const updateComandes = async (idCommande) => {
   const reponse = await Axios.put(
     `/api/commande/updateCommande/${idCommande}`,
@@ -20,16 +20,23 @@ const updateComandes = async (idCommande) => {
     {
       headers: {
         Authorization: localStorage.getItem("token"),
-        'Content-Type': 'application/json'
-      }
+        "Content-Type": "application/json",
+      },
     }
   );
-  if(reponse.status===201){
-    return reponse.data
+  if (reponse.status === 201) {
+    return reponse.data;
   }
+};
+
+///recuperer utilisateur dans ma base de donnée
+const getUser = async () => {
+  const data = await Axios.get("/api/users/");
+  return data.data.message 
 };
 
 export const apiService = {
   getComandes,
   updateComandes,
+  getUser,
 };

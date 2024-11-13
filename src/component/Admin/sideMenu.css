@@ -1,0 +1,16 @@
+.side-dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.petit-box-dash {
+  width: 100%;
+  display: flex;
+}
+.slide-left {
+  margin-left: 1rem;
+}

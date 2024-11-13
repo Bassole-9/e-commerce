@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#admin {
+  display: flex;
+}
+
+.AHeader {
+  text-align: center;
+  line-height: 80px;
+  background-color: gray;
+}
+.sideMenu {
+  flex-grow: 1;
+  border-right: solid 1px gray;
+}
+.sideMenu ul {
+  list-style: none;
+  padding: 10px;
+}
+.sideMenu ul li {
+  display: list-item;
+  margin-top: 10px;
+}
+.sideMenu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#admin_body {
+  flex-grow: 6;
+  padding-left: 15px;
+}
+.listeDecaler {
+  margin-left: 2rem;
+}
+
+.sideMenu {
+  padding-left: 3rem;
+}

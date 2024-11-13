@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.formAdmin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parent_admin {
+  height: 22rem;
+  width: 22rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 2rem;
+  background: white;
+  margin-top: 3rem;
+}
+.group {
+  width: 80%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.group input {
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid green;
+}
+.btn_connexion {
+  width: 100%;
+  margin-right: 0px;
+  background: black;
+  height: 3rem;
+}
+.carre-login {
+  width: 100%;
+  padding-left: 3rem;
+}

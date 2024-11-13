@@ -4,9 +4,9 @@ const AjoutUser = (user) => {
   return Axios.post("/api/users/", user);
 };
 
-const login =async (user)=>{
-  return await Axios.post("/api/users/login",user)
-}
+const login = async (user) => {
+  return await Axios.post("/api/users/login", user);
+};
 
 let saveToken = (token) => {
   localStorage.setItem("token", token);
@@ -20,12 +20,10 @@ let logout = () => {
   localStorage.removeItem("user");
 };
 
-
 let isLogged = () => {
   let token = localStorage.getItem("token");
   return !!token;
 };
-
 
 export const userServices = {
   AjoutUser,
@@ -33,5 +31,5 @@ export const userServices = {
   saveToken,
   logout,
   saveInfo,
-  isLogged
+  isLogged,
 };

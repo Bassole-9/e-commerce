@@ -53,3 +53,5 @@ export { default as image42 } from "./image/vetement.png";
 export { default as image43 } from "./image/pair.png";
 export { default as image44 } from "./image/vetem.png";
 export { default as image45 } from "./image/log.png";
+export { default as image46 } from "./image/visage.png";
+export { default as image47 } from "./image/visage2.png";

@@ -1,6 +1,5 @@
 import { image1 } from "../assets";
 import "./cssPublic/replay.css";
-import Carre from "../component/carre/carre";
 import { useState } from "react";
 import Categorie from "../component/Categorie/categorie";
 
@@ -151,11 +150,6 @@ const Replay = () => {
             <Categorie />
           </div>
           <div className="container_forma">
-            <div className="forma">
-              {Tous.map((ele, id) => {
-                return <Carre titre={ele.titre} image={ele.image} key={id} />;
-              })}
-            </div>
           </div>
         </div>
       </div>
