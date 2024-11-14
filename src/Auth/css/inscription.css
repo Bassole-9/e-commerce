@@ -7,6 +7,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 4rem;
 }
 .container .section_inscription {
   width: 100%;
@@ -77,7 +78,7 @@
   margin-top: 2.8rem;
 }
 
-.container .section_inscription form .inscri4 .inscri4_flex{
+.container .section_inscription form .inscri4 .inscri4_flex {
   display: flex;
 }
 

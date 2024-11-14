@@ -37,7 +37,8 @@ const SideMenu = () => {
               <RiUserSearchFill />
             </div>
             <div className="slide-left">
-              user
+              <div className="titre-li">user</div>
+              
               <ul className="listeDecaler">
                 <li>
                   <Link to="/admin/user/index">Liste</Link>
@@ -55,20 +56,17 @@ const SideMenu = () => {
               <MdArticle />
             </div>
             <div className="slide-left">
-            Articles
-            <ul className="listeDecaler">
-              <li>
-                <Link to="/admin/Articles/index">Liste</Link>
-              </li>
-              <li>
-                <Link to="/admin/Articles/edit">Ajoutez</Link>
-              </li>
-            </ul>
-
+              <div className="titre-li">Articles</div>
+              <ul className="listeDecaler">
+                <li>
+                  <Link to="/admin/Articles/index">Liste</Link>
+                </li>
+                <li>
+                  <Link to="/admin/Articles/edit">Ajoutez</Link>
+                </li>
+              </ul>
+            </div>
           </div>
-      </div>
-          
-          
         </li>
       </ul>
     </div>

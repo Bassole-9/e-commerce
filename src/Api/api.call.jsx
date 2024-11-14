@@ -29,14 +29,41 @@ const updateComandes = async (idCommande) => {
   }
 };
 
-///recuperer utilisateur dans ma base de donnée
-const getUser = async () => {
+///recuperer tous les utilisateurs dans ma base de donnée
+const getUsers = async () => {
   const data = await Axios.get("/api/users/");
   return data.data.message 
+};
+
+///recuperer un utilisateurs dans ma base de donnée
+const getUser= async(uid)=>{
+  const data = await Axios.get("/api/users/"+uid)
+  return data.data.message
+}
+
+///modifier un utilisateur dans ma BD
+const updateUser= async(user)=>{
+  const data = await Axios.put("/api/users/"+user._id)
+  return data.data.message
+}
+
+//suppremer un utilisateur de ma bd
+const deleteUser= async(uid)=>{
+  const data = await Axios.delete("/api/users/"+uid)
+  return data.data.message
+}
+
+///ajoutez un utilisateur dans ma Bd
+const AjouterUser = (user) => {
+  return Axios.post("/api/users/", user);
 };
 
 export const apiService = {
   getComandes,
   updateComandes,
+  getUsers,
   getUser,
+  updateUser,
+  deleteUser,
+  AjouterUser
 };

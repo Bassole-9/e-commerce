@@ -10,7 +10,11 @@
 .petit-box-dash {
   width: 100%;
   display: flex;
+  color: white;
 }
-.slide-left {
+.slide-left a {
+  margin-left: 1rem;
+}
+.titre-li {
   margin-left: 1rem;
 }

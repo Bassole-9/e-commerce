@@ -33,6 +33,7 @@
 #admin_body {
   flex-grow: 6;
   padding-left: 15px;
+  width: 100%;
 }
 .listeDecaler {
   margin-left: 2rem;

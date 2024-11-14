@@ -63,8 +63,6 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
     objet: panier,
   };
 
-
-
   ////////misa a jour en direct/////////////
   const envoie = async () => {
     if (!userServices.isLogged()) {
@@ -79,10 +77,10 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
           },
         }
       );
-      
+
       if (consome.status === 201) {
         setCommandeValide("votre commande a bien ete envoyé");
-        setListe((hold)=>[...hold,consome.data.message])
+        setListe((hold) => [...hold, consome.data.message]);
         setTimeout(() => {
           setCommandeValide("");
         }, 5000);
@@ -108,9 +106,7 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
         )}
         {commandeValide ? (
           <div className="container_validation">
-            <div className="validation">
-              
-            </div>
+            <div className="validation"></div>
             <div className="message_validation">
               <div className="cadre_validation">
                 <p className="titre_mess">{commandeValide}</p>

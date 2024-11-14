@@ -72,7 +72,9 @@ const Inscription = () => {
               <img src={image9} className="rond" />
               <img src={image10} className="rond" />
             </div>
-            <div style={{ color: "brown", display: "flex" }}>{erreur}</div>
+            <div style={{ color: "brown", display: "flex"}}>
+              {erreur}
+            </div>
             <hr />
             <div className="inscri3">
               <p>les champs marquer en astérisque sont obligatoire</p>

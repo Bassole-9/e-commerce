@@ -3,6 +3,16 @@
   margin: 0px;
   box-sizing: border-box;
 }
+.User {
+  width: 100%;
+}
+.user-bare {
+  width: 100%;
+  background: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 table {
   border-collapse: collapse;
@@ -16,7 +26,13 @@ thead {
 }
 thead th {
   padding: 10px;
+  border: 1px solid red;
+  padding: 1rem;
 }
+thead tr th p {
+  width: 14rem;
+}
+
 tbody {
   width: 100%;
 }
@@ -27,8 +43,11 @@ tbody tr {
 tbody tr td {
   padding: 1rem;
   background: whitesmoke;
-
   padding-left: 40px;
+}
+tbody tr td a {
+  text-decoration: none;
+  color: blue;
 }
 
 .image-utilisateur {
@@ -41,4 +60,8 @@ tbody tr td {
 .User h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.del_ubtn {
+  cursor: pointer;
+  color: red;
 }
