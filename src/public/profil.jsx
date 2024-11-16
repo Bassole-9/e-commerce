@@ -11,7 +11,6 @@ import { TiMessages } from "react-icons/ti";
 
 const Profil = () => {
   const infoUser = JSON.parse(localStorage.getItem("user"));
-  console.log(infoUser);
 
   const Navigate = useNavigate();
 

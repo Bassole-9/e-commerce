@@ -9,8 +9,8 @@ const AdminRouter = () => {
   return (
     <Routes>
       <Route element={<Alayout />}>
-        <Route index element={<Dashboard />} />
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route index element={<User />} />
+        <Route path="dashboard" element={<User />} />
         <Route path="user">
           <Route path="index" element={<User />} />
           <Route path="edit/:uid" element={<UserEdit />} />

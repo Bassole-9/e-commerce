@@ -167,7 +167,7 @@ const Header = ({ nombre, message, handleSearch }) => {
             </NavLink>
           </div>
           <div className="ul_nave_3_li">
-            <li className="li_header">
+            {/* <li className="li_header">
               <NavLink to="/replay" className="li_header_nav">
                 <span className="descend">Replay</span>
               </NavLink>
@@ -176,7 +176,7 @@ const Header = ({ nombre, message, handleSearch }) => {
               <NavLink to="/programme" className="li_header_nav">
                 Nos Programmes
               </NavLink>
-            </li>
+            </li> */}
             <li className="li_header">
               <NavLink to="/" className="li_header_nav">
                 Acceuil

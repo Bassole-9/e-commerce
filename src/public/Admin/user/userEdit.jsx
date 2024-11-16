@@ -3,14 +3,15 @@ import { useParams } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import { apiService } from "../../../Api/api.call";
 import "./userEdit.css";
+import { useNavigate } from "react-router-dom";
 
 const UserEdit = () => {
   const [user, setUser] = useState([]);
   const flag = useRef(false);
   const { uid } = useParams();
+  let navigate = useNavigate();
 
-
-  console.log(user);
+  const [Messages, setMessage] = useState("");
 
   const onChange = (e) => {
     setUser({
@@ -19,11 +20,19 @@ const UserEdit = () => {
     });
   };
 
+  console.log(user);
+
   const onSubmit = (e) => {
     e.preventDefault();
     apiService
       .updateUser(user)
-      .then((res) => console.log(res))
+      .then((res) => {
+        setMessage(res);
+        setTimeout(() => {
+          setMessage("");
+          navigate("../index");
+        }, 3000);
+      })
       .catch((err) => console.log(err));
   };
 
@@ -41,7 +50,16 @@ const UserEdit = () => {
 
   return (
     <div className="UserEdit">
-      <h1>userId</h1>
+      <div className="cadre_flex">
+        <h1>userId</h1>
+        <p
+          style={{ background: "green", borderRadius: "10px" }}
+          className="messages-cadre"
+        >
+          {Messages}
+        </p>
+      </div>
+
       <form onSubmit={onSubmit} className="formAdmin">
         <div>
           <h1>Modifier utilisateur</h1>
@@ -49,7 +67,7 @@ const UserEdit = () => {
         <div className="parent_admin-modif">
           <div className="input-modif">
             <div className="carre-login-modif">
-              <label htmlFor="login">Nom utilisateur</label>
+              <label htmlFor="login">Nom utilisateur :</label>
             </div>
             <div>
               <input
@@ -62,26 +80,13 @@ const UserEdit = () => {
           </div>
           <div className="input-modif">
             <div className="carre-login-modif">
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email">Email :</label>
             </div>
             <div>
               <input
                 type="text"
                 name="email"
                 value={user.email}
-                onChange={onChange}
-              />
-            </div>
-          </div>
-          <div className="input-modif">
-            <div className="carre-login-modif">
-              <label htmlFor="password">Mot De Passe:</label>
-            </div>
-            <div>
-              <input
-                type="text"
-                name="password"
-                value={user.motDePasse}
                 onChange={onChange}
               />
             </div>
@@ -99,6 +104,20 @@ const UserEdit = () => {
               />
             </div>
           </div>
+          <div className="input-modif">
+            <div className="carre-login-modif">
+              <label htmlFor="password">Mot De Passe:</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="password"
+                value={user.motDePasse}
+                onChange={onChange}
+              />
+            </div>
+          </div>
+
           <div className="input-modif">
             <div className="carre-login-modif">
               <label htmlFor="id">identifiant:</label>
@@ -127,7 +146,7 @@ const UserEdit = () => {
           </div>
 
           <div className="btn-connexion">
-            <button className="btn_connexion">modifier</button>
+            <button className="btn_connexion">modifier Utilisateur</button>
           </div>
         </div>
       </form>

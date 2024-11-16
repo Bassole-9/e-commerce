@@ -63,24 +63,25 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
     objet: panier,
   };
 
+
+
   ////////misa a jour en direct/////////////
   const envoie = async () => {
     if (!userServices.isLogged()) {
       Navigate("/connexion");
     } else {
       const consome = await axios.post(
-        "http://localhost:3000/api/commande/",
-        data,
+        "http://localhost:3000/api/commande/",data,
         {
           headers: {
             Authorization: localStorage.getItem("token"),
           },
         }
       );
-
+      
       if (consome.status === 201) {
         setCommandeValide("votre commande a bien ete envoyé");
-        setListe((hold) => [...hold, consome.data.message]);
+        setListe((hold)=>[...hold,consome.data.message])
         setTimeout(() => {
           setCommandeValide("");
         }, 5000);
@@ -106,7 +107,9 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
         )}
         {commandeValide ? (
           <div className="container_validation">
-            <div className="validation"></div>
+            <div className="validation">
+              
+            </div>
             <div className="message_validation">
               <div className="cadre_validation">
                 <p className="titre_mess">{commandeValide}</p>

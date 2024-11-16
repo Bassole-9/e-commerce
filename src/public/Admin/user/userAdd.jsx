@@ -17,7 +17,6 @@ const UserAdd = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(infoUtilisateur);
     apiService
       .AjouterUser(infoUtilisateur)
       .then((res) => navigate("../index"))
@@ -29,7 +28,7 @@ const UserAdd = () => {
       <h1>userAdd</h1>
       <form onSubmit={onSubmit} className="formAdmin">
         <div>
-          <h1>Ajoutez utilisateur</h1>
+          <h1>Ajoutez un utilisateur</h1>
           <div
             style={{
               color: "red",
@@ -44,7 +43,7 @@ const UserAdd = () => {
         <div className="parent_admin-modif">
           <div className="input-modif">
             <div className="carre-login-modif">
-              <label htmlFor="login">Nom utilisateur</label>
+              <label htmlFor="login">Nom utilisateur :</label>
             </div>
             <div>
               <input
@@ -62,7 +61,7 @@ const UserAdd = () => {
           </div>
           <div className="input-modif">
             <div className="carre-login-modif">
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email">Email :</label>
             </div>
             <div>
               <input
@@ -80,7 +79,7 @@ const UserAdd = () => {
           </div>
           <div className="input-modif">
             <div className="carre-login-modif">
-              <label htmlFor="number">Numero:</label>
+              <label htmlFor="number">Numero :</label>
             </div>
             <div>
               <input
@@ -100,7 +99,7 @@ const UserAdd = () => {
           <div className="input-modif">
             <div className="carre-login-modif">
               <label htmlFor="date">Date de Naissances:</label>
-            </div>
+            </div> 
             <div>
               <input
                 type="date"
@@ -117,7 +116,7 @@ const UserAdd = () => {
           </div>
           <div className="input-modif">
             <div className="carre-login-modif">
-              <label htmlFor="date">mot de passe:</label>
+              <label htmlFor="date">mot de passe :</label>
             </div>
             <div>
               <input

@@ -79,24 +79,24 @@ const PublicRouter = () => {
   const handleSearch = (query) => {
     if (query === "") {
       setFilteredSearch(articles);
-      setFilteredChaussure(chaussures)
-      setFilteredTelephone(telephone)
+      setFilteredChaussure(chaussures);
+      setFilteredTelephone(telephone);
     } else {
       setFilteredSearch(
         articles.filter((article) =>
           article.nom.toLowerCase().includes(query.toLowerCase())
         )
-      )
+      );
       setFilteredChaussure(
         chaussures.filter((chaussure) =>
           chaussure.nom.toLowerCase().includes(query.toLowerCase())
         )
-      )
+      );
       setFilteredTelephone(
         telephone.filter((telephones) =>
           telephones.nom.toLowerCase().includes(query.toLowerCase())
         )
-      )
+      );
     }
   };
 
@@ -114,15 +114,20 @@ const PublicRouter = () => {
         >
           <Route index element={<Acceuil />} />
           <Route path="/Acceuil" element={<Acceuil />} />
-          <Route path="/Replay" element={<Replay />} />
-          <Route path="/Programme" element={<Programme panier={panier} />} />
+          {/* <Route path="/Replay" element={<Replay />} /> */}
+          {/* <Route path="/Programme" element={<Programme panier={panier} />} /> */}
           <Route path="/inscription" element={<Inscription />} />
           <Route path="/connexion" element={<Login />} />
           <Route path="/Profil/*" element={<ProfilRouter />} />
           <Route
             path="/Articles"
             element={
-              <Article ajoutez={ajoutez} filteredSearch={filteredSearch} filteredChaussure={filteredChaussure} filteredTelephone={filteredTelephone}/>
+              <Article
+                ajoutez={ajoutez}
+                filteredSearch={filteredSearch}
+                filteredChaussure={filteredChaussure}
+                filteredTelephone={filteredTelephone}
+              />
             }
           />
           <Route

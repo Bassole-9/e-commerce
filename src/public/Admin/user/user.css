@@ -8,10 +8,11 @@
 }
 .user-bare {
   width: 100%;
-  background: red;
+  background: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: white;
 }
 
 table {
@@ -21,12 +22,11 @@ table {
 }
 thead {
   border: 1px solid black;
-  background: gold;
   width: 100%;
 }
 thead th {
   padding: 10px;
-  border: 1px solid red;
+  border: 1px solid black;
   padding: 1rem;
 }
 thead tr th p {
