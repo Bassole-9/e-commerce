@@ -71,7 +71,7 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
       Navigate("/connexion");
     } else {
       const consome = await axios.post(
-        "http://localhost:3000/api/commande/",data,
+        "https://e-commerce-back-3.onrender.com/api/commande/",data,
         {
           headers: {
             Authorization: localStorage.getItem("token"),

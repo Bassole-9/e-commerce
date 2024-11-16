@@ -20,8 +20,6 @@ const UserEdit = () => {
     });
   };
 
-  console.log(user);
-
   const onSubmit = (e) => {
     e.preventDefault();
     apiService
