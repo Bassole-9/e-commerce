@@ -8,6 +8,7 @@ const getComandes = async () => {
     },
   });
   if (data.status === 200) {
+    
     return data.data.commandes;
   }
 };
