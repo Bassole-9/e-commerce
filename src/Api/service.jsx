@@ -18,6 +18,8 @@ let saveInfo = (info) => {
 let logout = () => {
   localStorage.removeItem("token");
   localStorage.removeItem("user");
+  localStorage.removeItem("panier");
+  
 };
 
 let isLogged = () => {

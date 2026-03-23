@@ -5,10 +5,12 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { SlBasket } from "react-icons/sl";
 import { GrValidate } from "react-icons/gr";
 import { userServices } from "../Api/service";
-import axios from "axios";
+import Axios from "../Api/callerService";
 
 const PanierAchat = ({ panier, setPanier, setListe }) => {
   const [commandeValide, setCommandeValide] = useState("");
+
+  const [loading, setLoading] = useState(false);
 
   const Navigate = useNavigate();
 
@@ -67,29 +69,37 @@ const PanierAchat = ({ panier, setPanier, setListe }) => {
 
   ////////misa a jour en direct/////////////
   const envoie = async () => {
-    if (!userServices.isLogged()) {
-      Navigate("/connexion");
-    } else {
-      const consome = await axios.post(
-        "https://e-commerce-back-3.onrender.com/api/commande/",data,
-        {
-          headers: {
-            Authorization: localStorage.getItem("token"),
-          },
-        }
-      );
-      
-      if (consome.status === 201) {
-        setCommandeValide("votre commande a bien ete envoyé");
-        setListe((hold)=>[...hold,consome.data.message])
-        setTimeout(() => {
-          setCommandeValide("");
-        }, 5000);
-      } else {
-        console.log("erreur lors de la commande");
-      }
+  if (loading) return; // bloque double clic
+
+  setLoading(true);
+
+  if (!userServices.isLogged()) {
+    Navigate("/connexion");
+    setLoading(false);
+    return;
+  }
+
+  try {
+    const consome = await Axios.post("/api/commande/", data, {
+      headers: {
+        Authorization: localStorage.getItem("token"),
+      },
+    });
+
+    if (consome.status === 201) {
+      setCommandeValide("votre commande a bien ete envoyé");
+      setListe((hold) => [...hold, consome.data.message]);
+
+      setTimeout(() => {
+        setCommandeValide("");
+      }, 5000);
     }
-  };
+  } catch (err) {
+    console.log("erreur lors de la commande", err);
+  }
+
+  setLoading(false);
+};
 
   return (
     <>
